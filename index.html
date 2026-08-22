@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BotVault — Discord Bots</title>
+  <meta name="description" content="Discover powerful Discord bots and add them to your server.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#">
+      <span class="logo-mark">B</span>
+      <span>Bot<span>Vault</span></span>
+    </a>
+    <nav>
+      <a href="#bots">Bots</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="add-bot" href="#bots">Explore Bots <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="pill"><span class="pulse"></span> DISCORD BOT DIRECTORY</div>
+      <h1>Find the bot that<br><em>fits your server.</em></h1>
+      <p class="hero-text">
+        One home for all your Discord bots. Browse, search, and add useful bots
+        for music, moderation, community, utilities, and more.
+      </p>
+
+      <div class="hero-actions">
+        <a class="main-button" href="#bots">Explore bots <span>↓</span></a>
+        <a class="ghost-button" href="#about">How it works</a>
+      </div>
+
+      <div class="stats">
+        <div><strong id="botCount">12</strong><span>Bots</span></div>
+        <div><strong>24/7</strong><span>Availability</span></div>
+        <div><strong>1-click</strong><span>Invites</span></div>
+      </div>
+    </section>
+
+    <section class="directory" id="bots">
+      <div class="section-head">
+        <div>
+          <p class="label">THE DIRECTORY</p>
+          <h2>Explore the collection</h2>
+        </div>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Search bots..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="filters" id="categories">
+        <button class="filter active" data-category="All">All</button>
+        <button class="filter" data-category="Music">Music</button>
+        <button class="filter" data-category="Moderation">Moderation</button>
+        <button class="filter" data-category="Utility">Utility</button>
+        <button class="filter" data-category="Fun">Fun</button>
+        <button class="filter" data-category="Community">Community</button>
+      </div>
+
+      <div class="bot-grid" id="botGrid"></div>
+      <div class="empty" id="empty">No bots found. Try another search.</div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="label">MADE FOR DISCORD</p>
+        <h2>Give every bot<br>its own spotlight.</h2>
+      </div>
+      <p>
+        Add as many bots as you want by editing one simple list in
+        <code>script.js</code>. Each bot can have its own description, category,
+        icon, accent, commands, and Discord invite button.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>BOTVAULT</span>
+    <span>© 2026 • Not affiliated with Discord Inc.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
